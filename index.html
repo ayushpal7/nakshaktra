@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakshaktra AI | Celestial Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="chakra-icon">⭐</div>
+                <h2>Nakshaktra AI</h2>
+            </div>
+            <button class="new-chat-btn" onclick="location.reload()">+ New Conversation</button>
+
+            <div class="settings-section">
+                <h3>AI Settings</h3>
+                <div class="setting-item">
+                    <label>Creativity (Temp)</label>
+                    <input type="range" id="temp-range" min="0" max="1" step="0.1" value="0.7">
+                </div>
+                <div class="setting-item">
+                    <label>Response Type</label>
+                    <select id="length-select">
+                        <option value="concise">Concise</option>
+                        <option value="balanced" selected>Balanced</option>
+                        <option value="detailed">Detailed</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="sidebar-footer"><p>V3.8 Fast Response</p></div>
+        </aside>
+
+        <main class="chat-wrapper">
+            <div id="chat-display" class="chat-display">
+                <div class="welcome-screen">
+                    <div class="avatar-large">नक्षत्र</div>
+                    <h1>Nakshaktra AI</h1>
+                    <p>Celestial speed. Infinite intelligence.</p>
+                </div>
+            </div>
+
+            <div class="input-container">
+                <div class="input-box">
+                    <textarea id="user-input" rows="1" placeholder="Message Nakshaktra AI..."></textarea>
+                    <button id="send-btn">➔</button>
+                </div>
+                <p class="footer-note">Powered by Ayush Pal • Made with ❤️ in India</p>
+            </div>
+        </main>
+    </div>
+
+    <div id="copy-toast" class="toast">Code Copied!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
